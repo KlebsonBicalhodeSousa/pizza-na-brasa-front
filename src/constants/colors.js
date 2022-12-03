@@ -1,0 +1,6 @@
+export const mainColor = "#000"
+export const secondaryColor = "#8b0000"
+export const primaryColor = "#ff0000"
+export const tertiaryColor = "#ffffff"
+export const quaternaryColor = "#ffff0f"
+export const quintenaryColor = "#52078a"
