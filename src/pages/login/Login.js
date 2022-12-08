@@ -54,8 +54,7 @@ function Login() {
       .post(`${BASE_URL}/user/login`, body)
       .then((res) => {
         setEmail("");
-        setPassword("");
-        console.log(res.data.user.role)
+        setPassword("")
         localStorage.setItem("role", res.data.user.role)
         localStorage.setItem("token", res.data.token);
         if (res.data.user.role === "NORMAL") {
