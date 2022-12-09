@@ -14,6 +14,7 @@ export const MainContainer = styled.main`
   background-size: cover;
 `;
 export const ContainerMain = styled.div`
+  overflow: auto;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   max-width: 80%;
@@ -27,18 +28,13 @@ export const ContainerMain = styled.div`
   background-color: #fffafa5e;
   border-radius: 12px;
   border: 1px solid #d1d5db4d;
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
 
   @media (min-width: 280px) and (max-width: 500px) {
     width: 90%;
     max-height: 95%;
-    overflow: auto;
-  }
-
-  @media (min-width: 501px) and (max-width: 980px) {
-    overflow: auto;
-    ::-webkit-scrollbar {
-    background-color: transparent;
-  }
   }
 
   h1 {
