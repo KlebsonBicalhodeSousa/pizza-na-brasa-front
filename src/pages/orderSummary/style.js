@@ -28,12 +28,17 @@ export const ContainerMain = styled.div`
   border-radius: 12px;
   border: 1px solid #d1d5db4d;
 
-  @media (min-width: 280px) and (max-width: 420px) {
+  @media (min-width: 280px) and (max-width: 500px) {
     width: 90%;
+    max-height: 95%;
+    overflow: auto;
   }
 
-  @media (min-width: 620px) and (max-width: 980px) {
-    /* height: 30%; */
+  @media (min-width: 501px) and (max-width: 980px) {
+    overflow: auto;
+    ::-webkit-scrollbar {
+    background-color: transparent;
+  }
   }
 
   h1 {
@@ -41,7 +46,6 @@ export const ContainerMain = styled.div`
     text-align: center;
     margin-bottom: 15px;
   }
-  
 `;
 
 export const GoTOBack = styled(ArrowBackIosNewIcon)`
@@ -68,7 +72,7 @@ export const CartConfig = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  `
+`;
 export const InfoProfile = styled.div`
   display: flex;
   flex-direction: column;
@@ -77,24 +81,27 @@ export const InfoProfile = styled.div`
   gap: 10px;
   width: auto;
   margin-bottom: 10px;
-`
+`;
 export const InfoCart = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
-  width:100%;
+  width: 100%;
   p {
     text-align: center;
     font-size: 1.5rem;
   }
-`
+`;
 
-export const ContainerCart= styled.div`
+export const ContainerCart = styled.div`
   overflow: auto;
   max-height: 500px;
 
   ::-webkit-scrollbar {
     background-color: transparent;
+  }
+  @media (min-width: 300px) and (max-width: 501px) {
+    max-height: 340px;
   }
 `;
 
@@ -106,15 +113,15 @@ export const ContainerTotal = styled.div`
     text-align: end;
     margin-top: 10px;
   }
-`
+`;
 export const ContainerForm = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #fbfdff80;
-`
+`;
 export const Form = styled.form`
   padding: 10px;
-`
+`;
 
 export const ButtonConfirm = styled.button`
   margin-top: 0.625rem;

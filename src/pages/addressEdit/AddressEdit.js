@@ -34,7 +34,6 @@ function AddressEdit() {
         },
       })
       .then((res) => {
-        console.log(res.data.address);
         setForm({
           street: res.data.address.street,
           number: res.data.address.number,
