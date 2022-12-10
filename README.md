@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+<h2 align="center">🍕 Projeto Pizza na Brasa 🍕</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um site de delivery de pizza onde, o cliente faz um cadastro de usuário e cadastro de endereço para entrega.
+O sistema foi criado com React.js
 
-## Available Scripts
+<h3 align="center">
+  
+[🔗Deploy](#link-deploy) | [📚Bibliotecas](#bibliotecas-utilizadas) | [🛠️Tecnologias](#tecnologias-utilizadas)
+ 
+</h3>
 
-In the project directory, you can run:
+<h2>📋 Funcionalidades</h2
+  
+  O cliente entra na página inicial e faz um cadastro de usuário normal, logo após, faz um cadastro de endereço de entrga.
+  Ao criar seu acdastro, ele é redirecionado para a página de menu, onde o mesmo poderá visualizar as pizzas disponíveis no cardápio e adicionar pizzas ao carrinho.
+  No carrinho ele pode visualizar as pizzas adicionadas, escolher uma forma de pagamento, aumentar a quantidadedas de pizzas adicionadas, e também excluir pizzas do carrinho, pode visualizar o valor de cada pizza e o valor total do pedido. Ao finalizar a compra, um resumo do pedido com as informações da compra aparece na tela como uma espécie de modal e são inseridas em um banco de dados. Ao fechar a tela do resumo, o carrinho aparece vazio.
+  Também foi criado uma página de adimin onde só tem acesso usuário adimin, que por sua vez é criado somente no Back end. Nessa página, o usuário pode inserir pizzas junto com seu preço e url da imagem ( criada em um site de ospedagem de imagens) e inserir ingredientes disponíveis no painel do adiministrador da pizzaria, ao adicionar essas pizzas e ingredientes no painel, as informações são lançadas em um banco de dados. Após inserir as pizzas e ingredientes disponíveis, o adiministrador pode montar a pizza com ingredientes e lançar no menu de pizzas disponibilizando para o cliente. O adiministrador também pode excluir alguma pizza que tenha sido esgotada no dia, após excluir, a mesma também é excluida do banco de dados.
+  
+### Responsividade para mobile
 
-### `npm start`
+## 📚Bibliotecas Utilizadas
+  
+- axios
+- react-router-dom
+- react-hooks
+- Bootstrap Icons
+- Material Icons
+- styled-components
+- sweet-alert2
+  
+## 🛠Tecnologias Utilizadas
+  
+<div style="display: inline_block">
+  <img aline="center" width="100px" height="45px" alt="JAVASCRIPT" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-             badge&logo=javascript&logoColor=black" />
+  <img aline="center" width="100px" height="45px" alt="REACT" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img aline="center" width="100px" height="45px" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img aline="center" width="80px" height="45px" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img align="center" alt="Git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">  
+</div>
+  
+ ## 🔗Link Deploy
+- https://pizza-na-brasa.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✒️ Autor
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Desenvolvido por:
+Perfil      | Link do perfil no GITHUB
+--------- | ------
+[<img src="https://avatars.githubusercontent.com/KlebsonBicalhodeSousa" width="75px;"/>](https://github.com/KlebsonBicalhodeSousa) | [KlebsonBicalhodeSousa](https://github.com/KlebsonBicalhodeSousa)
